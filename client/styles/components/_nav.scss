@@ -1,0 +1,132 @@
+// nav {
+//   display: flex;  
+//   justify-content: space-around;
+//   align-items: center;
+//   min-height: 12vh;
+//   // background: #f8f8f8;
+//   background-color: rgb(245, 245, 245);
+//   color: white;
+  
+  
+// }
+
+.nav-links {
+  width: 40%;
+  // display: flex;
+  // justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+// .container {
+// 	width: 90%;
+// 	margin: 0 auto;
+// }
+
+.flex{
+  display: flex;
+  
+  width: 100%;
+  width: 100vw;
+
+}
+
+.flex-start{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+header {
+  background: #edecec;
+  height: 10vh;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-one {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  float: left;
+}
+
+.nav-two {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 23px;
+  text-align: left;
+  position: relative;
+  
+}
+
+nav .nav-two, .login-button {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav .nav-two:hover, .login-button:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+nav .nav-two::before, .login-button::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav .nav-two:hover::before, .login-button:hover::before {
+  width: 100%;
+}
+
+.login-button {
+  display: inline;
+  border: none;
+}
+
+#profile-image {
+  border-radius: 50%
+}
+
+.home-notif {
+  margin: auto 0;
+}
+
+.home-notif button {
+  border: none;
+  background: none;
+}
+
+.home-notif button:hover {
+  background-color: gray;
+}
+
+a.arrow{
+  color: #444 !important;
+}
